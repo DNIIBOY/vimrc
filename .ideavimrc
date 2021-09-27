@@ -15,8 +15,8 @@ set highlightedyank
 set ReplaceWithRegister
 set textobj-indent
 set exchange
+set multiple-cursors
 " set NERDTree
-" set multiple-cursors
 " set textobj-entire
 " set vim-paragraph-motion
 
@@ -25,6 +25,15 @@ set argtextobj
 g:argumentobject_force_toplevel = 1
 
 "set easymotion
+
+" smart key rebinds
+nnoremap <C-s> :%s///g<left><left><left>
+
+" smart refactor ting
+set idearefactormode=keep
+
+" shift + j big brain
+set ideajoin
 
 "" Source your .vimrc
 "source ~/.vimrc

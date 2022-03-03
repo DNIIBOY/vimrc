@@ -41,6 +41,8 @@ let mapleader = "-"
 " nnoremap <from> <to>
 " smart key rebinds
 nnoremap <C-s> :%s///g<left><left><left>
+" remove highlights after search
+nnoremap <leader>h :nohls<cr>
 
 set scrolloff=3
 
